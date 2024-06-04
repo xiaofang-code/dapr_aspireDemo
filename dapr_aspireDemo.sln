@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp.AppHost", "AspireApp\AspireApp.AppHost\AspireApp.AppHost.csproj", "{8BDB1D31-9977-4CB5-8285-A590CE928233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp.ServiceDefaults", "AspireApp\AspireApp.ServiceDefaults\AspireApp.ServiceDefaults.csproj", "{B43386C9-899C-40AC-92D6-6436D8723BEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{6B21BE13-55C5-430A-B964-99CAFC5DF6B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{E5900300-724E-4754-9B35-3771A1785ECB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "checkout", "Services\checkout\checkout.csproj", "{14BA64A7-3C89-4405-A768-52CE4488C788}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "order-processor", "Services\order-processor\order-processor.csproj", "{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BDB1D31-9977-4CB5-8285-A590CE928233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDB1D31-9977-4CB5-8285-A590CE928233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDB1D31-9977-4CB5-8285-A590CE928233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDB1D31-9977-4CB5-8285-A590CE928233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43386C9-899C-40AC-92D6-6436D8723BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43386C9-899C-40AC-92D6-6436D8723BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43386C9-899C-40AC-92D6-6436D8723BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43386C9-899C-40AC-92D6-6436D8723BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BA64A7-3C89-4405-A768-52CE4488C788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BA64A7-3C89-4405-A768-52CE4488C788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BA64A7-3C89-4405-A768-52CE4488C788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BA64A7-3C89-4405-A768-52CE4488C788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BDB1D31-9977-4CB5-8285-A590CE928233} = {6B21BE13-55C5-430A-B964-99CAFC5DF6B5}
+		{B43386C9-899C-40AC-92D6-6436D8723BEF} = {6B21BE13-55C5-430A-B964-99CAFC5DF6B5}
+		{14BA64A7-3C89-4405-A768-52CE4488C788} = {E5900300-724E-4754-9B35-3771A1785ECB}
+		{51B62A38-AEA7-40B5-AE3E-E1B9F8428AF9} = {E5900300-724E-4754-9B35-3771A1785ECB}
+	EndGlobalSection
+EndGlobal
