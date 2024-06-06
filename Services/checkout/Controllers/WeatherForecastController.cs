@@ -16,7 +16,7 @@ namespace webapidemo1.Controllers
             _daprClient= daprClient;
         }
 
-        [HttpGet(Name = "SendEvent")]
+        [HttpGet("SendEvent")]
         public async Task Get()
         {
             _logger.LogInformation("begin Send");
@@ -30,6 +30,18 @@ namespace webapidemo1.Controllers
             }
             _logger.LogInformation("end Send");
         }
+
+
+        [HttpGet("weatherforecast")]
+        public async Task<WeatherForecast[]> GetWeatherAsync()
+        {
+            return await _daprClient.InvokeMethodAsync<WeatherForecast[]>(HttpMethod.Get, "order-processor", "weatherforecast");
+        }
     }
     public record Order(string content);
+
+    public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }
