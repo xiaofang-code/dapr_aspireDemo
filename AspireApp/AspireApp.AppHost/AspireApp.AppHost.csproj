@@ -17,6 +17,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Services\checkout\checkout.csproj" />
     <ProjectReference Include="..\..\Services\order-processor\order-processor.csproj" />
+    <ProjectReference Include="..\..\Services\cart\cart.csproj" />
+    <ProjectReference Include="..\..\Services\order\order.csproj" />
   </ItemGroup>
 
 </Project>

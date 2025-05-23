@@ -9,3 +9,9 @@ apps:
   - appID: checkout-sdk
     appDirPath: ./checkout/
     command: ["dotnet", "run"]
+  - appID: cart
+    appDirPath: ./cart/
+    command: ["dotnet", "run"]
+  - appID: order
+    appDirPath: ./order/
+    command: ["dotnet", "run"]
